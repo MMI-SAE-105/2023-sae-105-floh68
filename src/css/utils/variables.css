@@ -1,0 +1,12 @@
+:root {
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --pink: rgba(66, 3, 56, 1);
+  --blue: rgba(216, 216, 240, 1);
+  --pink: rgb(110, 6, 93);
+
+  /* Typography */
+  --font-baskervville: 'Baskervville', serif;
+  --font-mulish: 'Mulish', sans-serif;
+}
