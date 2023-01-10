@@ -1,4 +1,4 @@
-header img{
+.logo{
     width: 10%;
     right: 0;
     position: absolute;
@@ -6,7 +6,12 @@ header img{
     margin-top: 1%;
 }
 
-.header__menuBtn {
+.burger{
+    width: 100%;
+    margin-top: 25%;
+    margin-left: 20%;
+}
+.header_menuBtn {
     width: 10%;
     height: 10%;
     color: white;
@@ -15,4 +20,4 @@ header img{
     fill: white;
     margin-top: 1%;
     margin-left: 1%;
-  }
+}

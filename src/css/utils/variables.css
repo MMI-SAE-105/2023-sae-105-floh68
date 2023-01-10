@@ -9,4 +9,8 @@
   /* Typography */
   --font-baskervville: 'Baskervville', serif;
   --font-mulish: 'Mulish', sans-serif;
+
+  /*Size-font*/
+
+  --text-image: 140%;
 }

@@ -13,22 +13,34 @@
 
     <header>
             <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
-            <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
-            <svg viewBox="0 0 24 24">
-                <path class="hamburger-menu__top" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-            </svg>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
             </button>
-        <nav id="mainNav" x-show="menuIsOpen" class="menu">
-          <ul>
-            <li><a href="#">item 1</a></li>
-            <li><a href="#">item 2</a></li>
-            <li><a href="#">item 3</a></li>
-          </ul>
-        </nav>
-        <img rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg"></div>
-      </header>
+            <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#">A PROPOS</a></li>
+          <li><a href="#">BILLETERIE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg"></div>
+    </header>
     <main>
-        <section></section>
+        <section>
+          <div class="img-expo">
+            <img rel="img" alt="art_expo" src="/public/img/ACCUEIL/artCinetique.webp">
+            <h1 class="image-text">ART CINETIQUE</h1>
+          </div>          
+        </section>
+        <section>
+          <div class="mise-en-forme">
+          <p>Bienvenue sur notre site web dédié à l'événement d'art cinétique !</p>
+          <p>Nous sommes ravis de vous accueillir ici et de vous présenter notre événement. L'art cinétique est une forme d'art visuel qui met en mouvement des objets et des formes afin de créer une expérience visuelle immersive. Nous sommes impatients de vous présenter les œuvres de plusieurs artistes de talent, qui ont travaillé dur pour créer des expériences uniques et captivantes pour notre public.</p>
+          <p>Notre événement se déroulera le 25 mars 2023 et se tiendra au département MMI à Montbéliard. Nous espérons que vous serez des nôtres pour cette occasion spéciale. N'hésitez pas à explorer notre site web pour en savoir plus sur l'événement et sur les artistes qui y participeront. Nous espérons vous voir bientôt !</p>
+          </div>
+        </section>
     </main>
   </body>
 </html>

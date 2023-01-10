@@ -7,3 +7,48 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.img-expo {
+  position: relative;
+  margin-top: 5%;
+}
+
+.img-expo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1; 
+}
+
+.img-expo .image-text {
+  position: absolute;
+  z-index: 1; 
+  color: white;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-expo img{
+  width: 100%;
+  display: block;
+}
+
+.image-text{
+  font-family: var(--font-baskervville);
+  font-size: var(--text-image);
+  mix-blend-mode: overlay;
+}
+
+.mise-en-forme{
+  font-family: var(--font-baskervville);
+  line-height: 150%;
+}
+
+.mise-en-forme p{
+  left: 13px;
+  margin-top: 5%;
+}
+

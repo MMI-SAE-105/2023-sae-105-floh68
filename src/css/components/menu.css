@@ -4,7 +4,46 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #fff;
+  background: linear-gradient(180deg, #B0F2B6 0%, #79D2E6 16.56%, #8FDFD3 66.04%, #B0F2B6 83.75%);
   display: grid;
   place-content: center;
+  z-index: 2;
+  text-decoration: none;
+}
+.close{
+  width: 8%;
+  left: 0;
+  top: 0;
+  margin-left: 1%;
+  margin-top: 1%;
+  z-index: 8;
+  position: absolute;
+  display: grid;
+}
+
+.burger, .close {
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-open .burger {
+  transform: rotate(45deg) translate(5px, 5px);
+  opacity: 0;
+}
+.menu-open .close {
+  transform: rotate(90deg) translate(5px, -5px);
+  opacity: 1;
+}
+.menu-close .burger {
+  transform: rotate(0deg) translate(0px, 0px);
+  opacity: 1;
+}
+.menu-close .close {
+  transform: rotate(0deg) translate(0px, 0px);
+  opacity: 0;
+}
+.close-open {
+  transform: rotate(45deg);
+}
+.close-close {
+  transform: rotate(0deg);
 }
