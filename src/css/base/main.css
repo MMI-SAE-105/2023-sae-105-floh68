@@ -156,3 +156,24 @@ p3{
   transform: translate(-50%, -50%);
   color: white;
 }
+
+.ting{
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-baskervville);
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.tarif{
+  text-align: center;
+}
+
+.tarif li{
+  margin-top: 15%;
+  font-family: var(--font-baskervville);
+}

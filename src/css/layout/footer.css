@@ -20,6 +20,7 @@
 .reseaux p{
     margin-right: 5%;
     margin-left: 5%;
+    font-family: var(--font-mulish);
 }
 
 .footer{
@@ -30,6 +31,7 @@
 
 .footer p{
     margin-top: 5%;
+    font-family: var(--font-mulish);
 }
 
 footer a{

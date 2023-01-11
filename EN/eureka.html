@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
+  </head>
+  <body>
+
+    <header>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
+            </button>
+             <div class="list"><nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+           <ul class="menu-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="aPropos.html">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+              </div>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
+    </header>
+    <main>
+        <h1 class="titre">Eureka : une œuvre emblématique de Jean Tinguely</h1>
+        <p>Eureka est une sculpture mécanique créée par l'artiste suisse Jean Tinguely en 1960. Elle a été présentée pour la première fois lors d'une performance au Musée d'Art Moderne de New York et est considérée comme l'une de ses œuvres les plus célèbres.</p>
+        <h2 class="sous-titre">Conception de l'œuvre</h2>
+        <p>Eureka est composée de nombreux éléments mécaniques récupérés, tels que des roues, des engrenages, des tuyaux et des moteurs, qui sont reliés par un système complexe de câbles et de poulies. La sculpture est également équipée de nombreux projecteurs qui illuminent les éléments mécaniques en mouvement.</p>
+        <p>L'œuvre est conçue pour être interactive, avec des interrupteurs et des boutons qui permettent aux spectateurs de déclencher des mouvements et des sons aléatoires. Le but était de créer une performance qui allait au-delà de l'art statique en incluant des éléments de son, de lumière, etde mouvement. Le résultat était une expérience immersive pour les spectateurs, qui pouvaient interagir avec l'œuvre et découvrir comment les différents éléments mécaniques fonctionnaient ensemble pour créer un spectacle en constante évolution.
+        <h2 class="sous-titre">Signification de l'œuvre</h2>
+        <p>Eureka est considérée comme une réflexion sur la technologie moderne et les forces de la vie. Les matériaux récupérés utilisés dans la construction de la sculpture symbolisent la récupération et la réutilisation des ressources, tandis que les mouvements aléatoires et les sons créent une expérience immersive qui reflète la complexité de la vie moderne. </p>
+            <p>Il est également considéré comme un symbole de l'esthétique unique de Tinguely, qui combinait l'irrévérence du dadaïsme avec une préoccupation pour la technologie moderne et l'idée d'une sculpture "vivante" qui peut évoluer au fil du temps. </p>
+            <p>En résumé, Eureka est une œuvre emblématique de Jean Tinguely qui a été considérée comme une réflexion sur les forces de la nature, la technologie moderne et la récupération des ressources. Elle est également un symbole de l'esthétique unique de l'artiste qui crée des expériences immersives en incluant des éléments de son, de lumière et de mouvement dans ses œuvres. </p>
+    </main>
+    <footer>
+        <div class="logo_footer">
+          <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+          <img rel="icon" src="/public/img/icons/copyright.svg">
+        </div>
+        <div class="footer">
+          <a href="index.html"><p>ACCUEIL</p></a>
+          <a href="aPropos.html"><p>A PROPOS</p></a>
+          <a href="#"><p>BILLETERIE</p></a>
+          <a href="contact.html"><p>CONTACT</p></a>
+        </div>
+        <div class="reseaux">
+          <p>SUIVEZ-NOUS</p>
+          <img rel="icon" src="/public/img/icons/facebook.svg">
+          <img rel="icon" src="/public/img/icons/instagram.svg">
+          <img rel="icon" src="/public/img/icons/twitter.svg">
+          <img rel="icon" src="/public/img/icons/linkedin.svg">
+        </div>
+      </footer>
+  
+</body>
+</html>
