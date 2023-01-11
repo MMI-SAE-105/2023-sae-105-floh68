@@ -1,59 +1,58 @@
-
-article,
-article div,
-article a,
-article img {
-  box-sizing: border-box;
-}
-.disparu{
-  display: none;
-}
-article{
-    box-sizing: border-box;
-    background: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000000,
-                0 0 10px #000000;
-    margin: 15px;
-    margin-top: 10px;
-    margin-left: 8px;
-    font-size: 20px;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    height: auto;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    overflow: visible;
-    font-family: var(--font-merriweather);
-    font-weight: 700;
+.article{
+  position: relative;
+  width: 90%;
+  mix-blend-mode: multiply;
+  filter: blur(2px);
+  margin-top: 5%;
 }
 
-article a{
-    text-decoration: none;
-    color: var(--black);
-    line-height: 30px;
-}
-article img{
-  max-width: 100%;
-}
-
-.droite{
-    margin-left: 70px;
-}
-
-.intro{
-  font-family: var(--font-merriweather);
-}
-
-.intro h1{
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.intro p{
+.meme h2{
+  position: absolute;
+  top:auto;
+  transform: translate(-0%, -725%);
+  text-align: center;
   font-family: var(--font-baskervville);
-  font-weight: 400;
-  font-size: 14px;
+  line-height: 150%;
+  mix-blend-mode: screen;
+  font-style: normal;
+  color: var(--white);
+  font-size: var(--text-image);
+  line-height: 150%;
+  font-weight: var(--text-img);
 }
+.meme h3{
+  position: absolute;
+  top:auto;
+  transform: translate(-0%, -0%);
+  text-align: center;
+  font-family: var(--font-baskervville);
+  line-height: 150%;
+  mix-blend-mode: screen;
+  font-style: normal;
+  color: var(--white);
+  font-size: var(--text-image);
+  line-height: 150%;
+  font-weight: var(--text-img);
+}
+.meme h4{
+  position: absolute;
+  top:auto;
+  transform: translate(-0%, 725%);
+  text-align: center;
+  font-family: var(--font-baskervville);
+  line-height: 150%;
+  mix-blend-mode: screen;
+  font-style: normal;
+  color: var(--white);
+  font-size: var(--text-image);
+  line-height: 150%;
+  font-weight: var(--text-img);
+}
+
+.meme {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+

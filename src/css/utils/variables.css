@@ -2,9 +2,7 @@
   /* Color styles */
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
-  --pink: rgba(66, 3, 56, 1);
-  --blue: rgba(216, 216, 240, 1);
-  --pink: rgb(110, 6, 93);
+  --background: linear-gradient(180deg, #B0F2B6 0%, #79D2E6 16.56%, #8FDFD3 66.04%, #B0F2B6 83.75%);
 
   /* Typography */
   --font-baskervville: 'Baskervville', serif;
@@ -13,4 +11,8 @@
   /*Size-font*/
 
   --text-image: 140%;
+  --text-menu: 150%;
+
+  /*font-weight*/
+  --text-img: 400;
 }

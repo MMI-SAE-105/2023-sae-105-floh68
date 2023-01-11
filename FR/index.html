@@ -12,20 +12,20 @@
   <body>
 
     <header>
-            <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
             <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
               <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
               <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
             </button>
-            <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
-        <ul>
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">A PROPOS</a></li>
-          <li><a href="#">BILLETERIE</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg"></div>
+            <nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+              <ul class="menu-list">
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
     </header>
     <main>
         <section>
@@ -40,7 +40,38 @@
           <p>Nous sommes ravis de vous accueillir ici et de vous présenter notre événement. L'art cinétique est une forme d'art visuel qui met en mouvement des objets et des formes afin de créer une expérience visuelle immersive. Nous sommes impatients de vous présenter les œuvres de plusieurs artistes de talent, qui ont travaillé dur pour créer des expériences uniques et captivantes pour notre public.</p>
           <p>Notre événement se déroulera le 25 mars 2023 et se tiendra au département MMI à Montbéliard. Nous espérons que vous serez des nôtres pour cette occasion spéciale. N'hésitez pas à explorer notre site web pour en savoir plus sur l'événement et sur les artistes qui y participeront. Nous espérons vous voir bientôt !</p>
           </div>
+          <div class="meme">
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/Expo.webp" onclick="redirectToPage('exposition.html')">
+            <h2 onclick="redirectToPage('exposition.html')">EXPOSTITION</h2>
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/ticket.webp" onclick="redirectToPage('tarif.html')">
+            <h3 onclick="redirectToPage('tarif.html')">TARIF</h3>
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/mouv.webp" onclick="redirectToPage('mouvement.html')">
+            <h4 onclick="redirectToPage('mouvement.html')">MOUVEMENT ARTISTIQUE</h4>
+          </div>
+          <script>  function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+          }
+        </script>          
         </section>
+        <footer>
+          <div class="logo_footer">
+            <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+            <img rel="icon" src="/public/img/icons/copyright.svg">
+          </div>
+          <div class="footer">
+            <a href="index.html"><p>ACCUEIL</p></a>
+            <a href="aPropos.html"><p>A PROPOS</p></a>
+            <a href="#"><p>BILLETERIE</p></a>
+            <a href="contact.html"><p>CONTACT</p></a>
+          </div>
+          <div class="reseaux">
+            <p>SUIVEZ-NOUS</p>
+            <img rel="icon" src="/public/img/icons/facebook.svg">
+            <img rel="icon" src="/public/img/icons/instagram.svg">
+            <img rel="icon" src="/public/img/icons/twitter.svg">
+            <img rel="icon" src="/public/img/icons/linkedin.svg">
+          </div>
+        </footer>
     </main>
   </body>
 </html>

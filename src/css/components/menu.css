@@ -1,15 +1,32 @@
 .menu {
-  position:fixed;
+  overflow: hidden;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #B0F2B6 0%, #79D2E6 16.56%, #8FDFD3 66.04%, #B0F2B6 83.75%);
+  height: 100%;
+  width: 100%;
+  background: var(--background);
   display: grid;
   place-content: center;
   z-index: 2;
-  text-decoration: none;
+  margin: auto;
 }
+
+.menu ul{
+  margin-bottom: 100%;
+  text-align: center;
+}
+.menu ul li{
+  list-style: none;
+  margin-top: 90%;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-baskervville);
+  font-size: var(--text-menu);
+}
+
 .close{
   width: 8%;
   left: 0;
@@ -17,7 +34,7 @@
   margin-left: 1%;
   margin-top: 1%;
   z-index: 8;
-  position: absolute;
+  position: fixed;
   display: grid;
 }
 
