@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>  </head>
+
+<form action="https://duckduckgo.com/" method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit="q = q + ' site:mmimontbeliard.com'">
+    <label for="q">Text à chercher :</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button type="submit">Rechercher</button>
+</form>
+<footer>
+    <div class="logo_footer">
+      <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+      <img rel="icon" src="/public/img/icons/copyright.svg">
+    </div>
+    <div class="footer">
+      <a href="index.html"><p>ACCUEIL</p></a>
+      <a href="aPropos.html"><p>A PROPOS</p></a>
+      <a href="#"><p>BILLETERIE</p></a>
+      <a href="contact.html"><p>CONTACT</p></a>
+    </div>
+    <div class="reseaux">
+      <p>SUIVEZ-NOUS</p>
+      <img rel="icon" src="/public/img/icons/facebook.svg">
+      <img rel="icon" src="/public/img/icons/instagram.svg">
+      <img rel="icon" src="/public/img/icons/twitter.svg">
+      <img rel="icon" src="/public/img/icons/linkedin.svg">
+    </div>
+  </footer>
+
+</body>
+</html>
