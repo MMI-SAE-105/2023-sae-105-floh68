@@ -1,100 +1,79 @@
 <!DOCTYPE html>
-  <html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Autorama</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="icon" href="/public/img/icons/logo_transparent.svg"/>
-    <link rel="javascript" href="/src/javascript/script.js"/>
-    <script defer src="//unpkg.com/alpinejs" ></script>
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
   </head>
   <body>
-    
+
     <header>
-      <nav>
-        <div class="logo"><a href="https://autorama.fhoutmann.fr/"><img alt="logo" src="/public/img/icons/logo_transparent.svg"/></a></div>
-          <div class="menu">
-            <div class="toggle"><span></span></div>
-            <script>let menu = document.querySelector('.menu');
-              document.querySelector('.toggle').onclick = function(){
-                this.classList.toggle('active');
-                menu.classList.toggle('active');
-              }</script>
-                <ul>
-                  <li style="--i:0;"><a href="/EN/index.html">HOME</a></li>
-                  <li style="--i:1;"><a href="/EN/aPropos.html">ABOUT</a></li>
-                  <li style="--i:2;"><a href="/EN/autresProjets.html">OTHERS PROJECTS</a></li>
-                  <li style="--i:3;"><a href="/EN/contact.html">CONTACT</a></li>
-                  <li style="--i:4;"><a href="#">GLOSSARY</a></li>
-                </ul>
-          </div>
-      </nav>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
+            </button>
+             <div class="list"><nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+           <ul class="menu-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="aPropos.html">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+              </div>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
     </header>
     <main>
-      <section class="intro"><h1>INTRODUCTION :D</h1>
-      <p>Following a joint project, autorama was created to discover what was happening with the automobile in the past, and its very promising future advances...</p>
-      </section>
-      <section>
-        <h1 class="disparu">articles</h1>
-        <article onclick="window.location.href='musique.html';">
-          <div><a><h2>Tokyo Drift by Teriyaki Boyz</h2>
-          <img src="/public/img/icons/drifting.svg" alt="music"></a></div>
-        </article>
-        <article class="droite" onclick="window.location.href='livre.html';">
-          <div><a><h2>Auto design - the greatest designers by larry edsall</h2>
-          <img src="/public/img/icons/sketch.svg" alt="livre"></a></div>
-        </article>
-        <article onclick="window.location.href='espoir.html';">
-          <div><a><h2>The evolution of the automobile</h2>
-          <img src="/public/img/icons/evolution.svg" alt="espoir"></a></div>
-        </article>
-        <article class="droite" onclick="window.location.href='regret.html';">
-          <div><a><h2>The disappearance of combustion engine vehicles</h2>
-          <img src="/public/img/icons/interdit.svg" alt="regret"></a></div>
-        </article>
-        <article onclick="window.location.href='film.html';">
-          <div><a><h2>Fast & Furious 5: a most historic film</h2>
-          <img src="/public/img/icons/drapeau-darrivee.svg" alt="film"></a></div>
-        </article>
-        <article class="droite" onclick="window.location.href='lieu.html';">
-          <div><a><h2>Detroit: a city that was once the centre of the automobile</h2>
-          <img src="/public/img/icons/ville.svg" alt="ville"></a></div>
-        </article>
-      </section>
-      <h1 class="gta">Some screenshots in GTA V</h1>
-      <carousel class="carousel">
-        
-        <div class="slider">
-          <span style="--i:1;"><img src="/public/img/carousel/BMW.webp" alt=""></span>
-          <span style="--i:2;"><img src="/public/img/carousel/chiron.webp" alt=""></span>
-          <span style="--i:3;"><img src="/public/img/carousel/chiron2.webp" alt=""></span>
-          <span style="--i:4;"><img src="/public/img/carousel/ferrari.webp" alt=""></span>
-          <span style="--i:5;"><img src="/public/img/carousel/mustang.webp" alt=""></span>
-          <span style="--i:6;"><img src="/public/img/carousel/porsche.webp" alt=""></span>
-          <span style="--i:7;"><img src="/public/img/carousel/RS6.webp" alt=""></span>
-          <span style="--i:8;"><img src="/public/img/carousel/twingo.webp" alt=""></span>
-        </div>
-      </carousel>
-    </main>
-    <footer>
-      <a class="mailto">Thank you for your visit, if you have any questions please contact me at the following email address: fhoutmann@orange.fr</a>
-      <div class="image"><img rel="icon" alt="universite-logo" src="/public/img/icons/univ.svg"/>
-      <img rel="icon" alt="logo-site" src="/public/img/icons/autorama.svg"/>
-      </div>
-      <a class=projet>Project carried out as part of an educational exercise in the department</a><a class="projet" href="http://mmimontbeliard.com">MMi de Montbéliard</a>
-      <a href="http://mmimontbeliard.com"><img rel="icon" alt="logo-MMI" src="/public/img/icons/MMI.svg"></a>
-      <div class="nom">
-        HOUTMANN<br>
-        Florian<br>
-        A2  
-      </div>
-      <div class=changement_langue>
-        <a href="/FR/index.html" class="language">FR</a>
-            <div class="white-line"></div>
-            <a href="/EN/index.html" class="language">EN</a>
-      </div>
-    </footer>
+        <section>
+          <div class="img-expo">
+            <img rel="img" alt="art_expo" src="/public/img/ACCUEIL/artCinetique.webp">
+            <h1 class="image-text">ART CINETIQUE</h1>
+          </div>          
+        </section>
+        <section>
+          <div class="mise-en-forme">
+          <p>Bienvenue sur notre site web dédié à l'événement d'art cinétique !</p>
+          <p>Nous sommes ravis de vous accueillir ici et de vous présenter notre événement. L'art cinétique est une forme d'art visuel qui met en mouvement des objets et des formes afin de créer une expérience visuelle immersive. Nous sommes impatients de vous présenter les œuvres de plusieurs artistes de talent, qui ont travaillé dur pour créer des expériences uniques et captivantes pour notre public.</p>
+          <p>Notre événement se déroulera le 25 mars 2023 et se tiendra au département MMI à Montbéliard. Nous espérons que vous serez des nôtres pour cette occasion spéciale. N'hésitez pas à explorer notre site web pour en savoir plus sur l'événement et sur les artistes qui y participeront. Nous espérons vous voir bientôt !</p>
+          </div>
+          <div class="meme">
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/Expo.webp" onclick="redirectToPage('exposition.html')">
+            <h2 onclick="redirectToPage('exposition.html')">EXPOSTITION</h2>
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/ticket.webp" onclick="redirectToPage('tarif.html')">
+            <h3 onclick="redirectToPage('tarif.html')">TARIF</h3>
+            <img rel="img" alt="expo" class="article" src="/public/img/ACCUEIL/mouv.webp" onclick="redirectToPage('mouvement.html')">
+            <h4 onclick="redirectToPage('mouvement.html')">MOUVEMENT ARTISTIQUE</h4>
+          </div>
+          <script>  function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+          }
+        </script>          
+        </section>
+      </main>
+        <footer>
+          <div class="logo_footer">
+            <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+            <img rel="icon" src="/public/img/icons/copyright.svg">
+          </div>
+          <div class="footer">
+            <a href="index.html"><p>ACCUEIL</p></a>
+            <a href="aPropos.html"><p>A PROPOS</p></a>
+            <a href="#"><p>BILLETERIE</p></a>
+            <a href="contact.html"><p>CONTACT</p></a>
+          </div>
+          <div class="reseaux">
+            <p>SUIVEZ-NOUS</p>
+            <img rel="icon" src="/public/img/icons/facebook.svg">
+            <img rel="icon" src="/public/img/icons/instagram.svg">
+            <img rel="icon" src="/public/img/icons/twitter.svg">
+            <img rel="icon" src="/public/img/icons/linkedin.svg">
+          </div>
+        </footer>
+    
   </body>
 </html>
