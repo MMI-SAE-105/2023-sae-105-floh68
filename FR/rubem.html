@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
+  </head>
+  <body>
+
+    <header>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
+            </button>
+             <div class="list"><nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+           <ul class="menu-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="aPropos.html">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+              </div>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
+    </header>
+    <main>
+        <h1 class="titre">Jean Tinguely</h1>
+        <a class="YT" href="https://goo.gl/maps/PPEg9tW2dN9tFZmk8"><img rel="img" alt="video" src="/public/img/detroit/DetroitLocalisation.webp"></a>
+        <img rel="img" alt="video" src="/public/img/detroit/DetroitLocalisation.webp">
+        <p>Jean Tinguely était un artiste suisse connu pour ses sculptures mécaniques. Il est né à Fribourg en Suisse en 1925 et est décédé à Bâle en 1992. Il a étudié à l'École Supérieure des Arts Décoratifs de Strasbourg et à l'Académie Julian à Paris, où il a rencontré les artistes de l'avant-garde, y compris les surréalistes et les dadaïstes.</p>
+        <p>Ses sculptures mécaniques, souvent appelées « metamatics », étaient des œuvres d'art animées et interactives qui combinaient des éléments mécaniques et électroniques. Les metamatics sont souvent construits à partir de matériaux récupérés et ont des mouvements aléatoires, souvent accompagnés de bruitages. Ses œuvres les plus célèbres incluent la sculpture "Homage to New York" (1960) qui fut détruite après une performance au MoMA à New York, et son "Meta-matics" (1958-1985) une collection de 27 sculptures qui explorent les formes et les mouvements.</p>
+        <p>Tinguely a également participé à des projets collaboratifs, notamment avec le peintre et sculpteur Niki de Saint Phalle. Il a également travaillé sur des projets architecturaux, tels que le "Musée Tinguely" à Bâle, qui présente une collection de ses œuvres ainsi que des expositions temporaires sur l'art contemporain.</p>
+        <div><h2 class="sous-titre">Si vous voulez encore plus de détails..</h2></div>
+        <p>Tinguely a développé une esthétique unique qui combinait l'irrévérence du dadaïsme, la préoccupation pour la technologie moderne et l'idée d'une sculpture "vivante" qui peut évoluer au fil du temps. Il a également travaillé sur des projets architecturaux, notamment le Musée Tinguely à Bâle qui présente une collection de ses œuvres ainsi que des expositions temporaires sur l'art contemporain.</p>
+        <p>Il a également travaillé sur des projets de collaboration avec d'autres artistes, notamment Niki de Saint Phalle, avec qui il a créé le "Jardin des tarots" à Garavicchio en Italie. Il a également été impliqué dans des projets de public art, comme la sculpture "La Cravate" à Bâle.</p>
+        <p>Il a reçu de nombreux prix et distinctions pour son travail au cours de sa carrière, y compris le grand prix national de sculpture de Suisse et le grand prix de la Biennale de Venise en 1966.</p>
+        <p>En résumé, Jean Tinguely est considéré comme un artiste avant-gardiste majeur du XXe siècle qui a contribué à développer un genre d'art mécanique animé et interactif, en utilisant des matériaux récupérés pour créer des œuvres qui prônaient l'irrévérence, la technologie moderne et la performance.</p>
+      </main>
+    <footer>
+        <div class="logo_footer">
+          <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+          <img rel="icon" src="/public/img/icons/copyright.svg">
+        </div>
+        <div class="footer">
+          <a href="index.html"><p>ACCUEIL</p></a>
+          <a href="aPropos.html"><p>A PROPOS</p></a>
+          <a href="#"><p>BILLETERIE</p></a>
+          <a href="contact.html"><p>CONTACT</p></a>
+        </div>
+        <div class="reseaux">
+          <p>SUIVEZ-NOUS</p>
+          <img rel="icon" src="/public/img/icons/facebook.svg">
+          <img rel="icon" src="/public/img/icons/instagram.svg">
+          <img rel="icon" src="/public/img/icons/twitter.svg">
+          <img rel="icon" src="/public/img/icons/linkedin.svg">
+        </div>
+      </footer>
+  
+</body>
+</html>

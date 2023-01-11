@@ -17,13 +17,14 @@
               <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
               <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
             </button>
-            <nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
-              <ul class="menu-list">
+             <div class="list"><nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+           <ul class="menu-list">
                 <li><a href="#">ACCUEIL</a></li>
                 <li><a href="#">A PROPOS</a></li>
                 <li><a href="#">BILLETERIE</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+              </div>
             </nav>
         <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
     </header>
@@ -53,6 +54,7 @@
           }
         </script>          
         </section>
+      </main>
         <footer>
           <div class="logo_footer">
             <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
@@ -72,6 +74,6 @@
             <img rel="icon" src="/public/img/icons/linkedin.svg">
           </div>
         </footer>
-    </main>
+    
   </body>
 </html>

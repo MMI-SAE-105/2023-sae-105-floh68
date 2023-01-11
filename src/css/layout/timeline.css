@@ -1,3 +1,9 @@
+.titre{
+  font-family: var(--font-baskervville);
+  text-align: center;
+  line-height: 37.5px;
+  font-weight: var(--tex-img);
+}
 .timeline:before {
     content: '';
     position:absolute;
@@ -5,7 +11,7 @@
     left:50%;
     width:2px;
     top:-20px;
-    background:var(--pink);
+    background:#FFC0CB;
     z-index:1;
   }
 .timeline{
@@ -17,6 +23,7 @@
 
 .timeline h3{
     color: var(--black);
+    font-family: var(--font-baskervville);
 }
 
 .timeline img{
@@ -43,7 +50,7 @@
   }
   
   .timeline ul li .right_content h2{
-    color:var(--black);
+    color:#FFC0CB;
     padding:0px 2px 18px 0px;
   }
   .timeline ul li:nth-child(odd){
@@ -67,7 +74,7 @@
     position:absolute;
     width:10px;
     height:10px;
-    background:var(--pink);
+    background:#FFC0CB;
     border-radius:50%;
     box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
     right:-6px;
@@ -80,7 +87,7 @@
     position:absolute;
     width:10px;
     height:10px;
-    background:var(--pink);
+    background:#FFC0CB;
     border-radius:50%;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
     left:-6px;
@@ -94,7 +101,7 @@
     margin:0;
     padding:8px 16px;
     color:#fff;
-    box-shadow:0 0 0 3px var(--pink);
+    box-shadow:0 0 0 3px #FFC0CB;
     border-radius:18px;
     
   }
@@ -106,7 +113,7 @@
     margin:0;
     padding:8px 16px;
     color:#fff;
-    box-shadow:0 0 0 3px var(--pink);
+    box-shadow:0 0 0 3px #FFC0CB;
     border-radius:18px;
     
   }
@@ -155,3 +162,21 @@
   
     
   }
+
+.right_content{
+    background-color: #FFC0CB;
+    border-radius: 15%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    width: auto;
+    height: 1000%;
+    font-family: var(--font-baskervville);
+    font-size: 80%;
+  }
+
+.right_content img{
+  width: 50%;
+  height: 50%;
+}

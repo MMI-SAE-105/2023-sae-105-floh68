@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
+  </head>
+  <body>
+
+    <header>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
+            </button>
+             <div class="list"><nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+           <ul class="menu-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="aPropos.html">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+              </div>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
+    </header>
+    <footer>
+        <div class="logo_footer">
+          <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+          <img rel="icon" src="/public/img/icons/copyright.svg">
+        </div>
+        <div class="footer">
+          <a href="index.html"><p>ACCUEIL</p></a>
+          <a href="aPropos.html"><p>A PROPOS</p></a>
+          <a href="#"><p>BILLETERIE</p></a>
+          <a href="contact.html"><p>CONTACT</p></a>
+        </div>
+        <div class="reseaux">
+          <p>SUIVEZ-NOUS</p>
+          <img rel="icon" src="/public/img/icons/facebook.svg">
+          <img rel="icon" src="/public/img/icons/instagram.svg">
+          <img rel="icon" src="/public/img/icons/twitter.svg">
+          <img rel="icon" src="/public/img/icons/linkedin.svg">
+        </div>
+      </footer>
+  
+</body>
+</html>

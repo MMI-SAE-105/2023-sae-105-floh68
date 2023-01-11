@@ -1,0 +1,90 @@
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  
+  }
+.carrousel_ecran {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-inline: 5%;
+  background-color: var(--menu-color);
+  border-radius: 5%;
+  border: 2px solid var(--tonic-color);
+  flex: none;
+  scroll-snap-align:center;
+  }
+.carrousel_ecran figure {
+    margin: 0;
+  }
+
+  .carrousel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .carrousel_btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); 
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-content: center;
+      color: #fff;
+    }
+    
+    .car__button{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .carrousel_btn-avant {
+      margin-top: 2%;
+      position: relative;
+      border: none;
+      background: none;
+      cursor: pointer;
+      width: 70px;
+      height: auto;
+    }
+    
+    .carrousel_btn-apres {
+      margin-top: 2%;
+      position: relative;
+      border: none;
+      background: none;
+      cursor: pointer;
+      width: 70px;
+      height: auto;
+    }
+
+.card__title__car{
+  color: var(--black);
+  font-family: var(--font-baskervville);
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.carte{
+      margin-inline: 10%;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid var(--black);
+      margin-bottom: 0;
+}
+
+figure a{
+    text-decoration: none;
+    text-align: right;
+}
+

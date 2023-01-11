@@ -1,9 +1,8 @@
 .logo_footer{
     align-items: center;
     display: flex;
-    width: 90%;
     margin-top: 10%;
-    transform: translate(25%, 0%)
+    overflow: hidden;
 }
 
 .reseaux{
@@ -13,7 +12,8 @@
 }
 
 .reseaux img{
-    margin-right: 5%;
+    display: block;
+    margin: auto;
 }
 
 .reseaux p{

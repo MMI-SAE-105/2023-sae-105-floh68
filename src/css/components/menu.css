@@ -1,17 +1,20 @@
 .menu {
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   background: var(--background);
   display: grid;
   place-content: center;
   z-index: 2;
-  margin: auto;
+  text-align: center;
 }
-
+.list{
+  overflow-x: inherit;
+}
 .menu ul{
   margin-bottom: 100%;
   text-align: center;
