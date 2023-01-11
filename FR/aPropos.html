@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}":class="{noscroll:menuIsOpen"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuoso</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/icons/virtuoso_onlyR.svg"/>
+  </head>
+  <body>
+
+    <header>
+            <link rel="icons" href="/public/img/icons/logo_transparent.svg"/>
+            <button aria-controls = "mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn" :class="{ 'menu-open': menuIsOpen }" >
+              <img class="burger" rel="menu" alt="menu" src="/public/img/icons/burger.svg">
+              <img class="close" rel="menu" alt="menu" src="/public/img/icons/croix.svg" x-show="menuIsOpen">
+            </button>
+            <nav id="mainNav" x-bind:style="{ 'overflow': menuIsOpen ? 'hidden' : 'initial' }" x-show = "menuIsOpen" x-transition.duration.800ms class="menu">
+              <ul class="menu-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="aPropos.html">A PROPOS</a></li>
+                <li><a href="#">BILLETERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+        <img class="logo" rel="icons" alt="logo" src="/public/img/icons/virtuoso_onlyR.svg">
+    </header>
+    <main>
+        <div class="pe">
+            <p>Ce site a été créé pour l'exposition d'art cinétique, car nous voulons partager notre passion pour cette forme d'art innovante et captivante avec le plus grand nombre de personnes possible.</p>
+            <p>L'art cinétique est une forme d'art qui met en mouvement des objets pour créer des œuvres d'art animées. Il est souvent associé à des mécanismes, des moteurs et des éléments électroniques, et il peut également inclure des éléments de performance et de participation du public. C'est un genre d'art qui se distingue par sa capacité à captiver les sens et à susciter des réactions émotionnelles chez les spectateurs.</p>
+            <p>Notre objectif en présentant cette exposition est de faire découvrir les œuvres d'artistes cinétiques importants et de les mettre en valeur, en donnant un aperçu de leur histoire, de leur processus de création et de leur impact sur la communauté artistique. En outre, nous voulons également montrer l'évolution de cette forme d'art au fil des années et comment le genre a influencé les artistes contemporains.</p>
+            <p>En visitant cette exposition, les visiteurs auront l'opportunité de découvrir des œuvres uniques et inspirantes qui les transporteront dans un univers de mouvement et de créativité. Ils auront également la chance de voir comment les artistes utilisent la technologie pour créer des œuvres interactives qui impliquent les spectateurs d'une manière significative.</p>
+            <p>Ce site est également conçu pour offrir une expérience immersive à travers des vidéos et des images des œuvres, ainsi qu'une section de ressources pour les personnes intéressées à en savoir plus sur l'art cinétique et les artistes qui le pratiquent. Nous espérons que cette exposition vous inspirera à explorer de nouveaux horizons artistiques et à réfléchir à la façon dont l'art peut être utilisé pour créer une expérience immersive pour les spectateurs.</p>
+        </div>
+    </main>
+<footer>
+    <div class="logo_footer">
+      <a href="index.html"><img rel="icon" src="/public/img/icons/virtuoso_entier.svg"></a>
+      <img rel="icon" src="/public/img/icons/copyright.svg">
+    </div>
+    <div class="footer">
+      <a href="index.html"><p>ACCUEIL</p></a>
+      <a href="aPropos.html"><p>A PROPOS</p></a>
+      <a href="#"><p>BILLETERIE</p></a>
+      <a href="contact.html"><p>CONTACT</p></a>
+    </div>
+    <div class="reseaux">
+      <p>SUIVEZ-NOUS</p>
+      <img rel="icon" src="/public/img/icons/facebook.svg">
+      <img rel="icon" src="/public/img/icons/instagram.svg">
+      <img rel="icon" src="/public/img/icons/twitter.svg">
+      <img rel="icon" src="/public/img/icons/linkedin.svg">
+    </div>
+  </footer>
+</body>
+</html>

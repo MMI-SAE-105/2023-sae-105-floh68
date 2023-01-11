@@ -125,6 +125,17 @@ p3{
   font-weight: 400;
 }
 
+.pe{
+  font-size: 14px;
+  font-family: var(--font-baskervville);
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-weight: 400;
+}
+
 .VS img{
   width: 360px;
 }
